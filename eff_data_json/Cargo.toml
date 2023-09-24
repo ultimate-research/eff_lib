@@ -1,0 +1,10 @@
+[package]
+name = "eff_data_json"
+version = "0.1.0"
+authors = ["ThatNintendoNerd"]
+edition = "2021"
+
+[dependencies]
+clap = { version = "4.4.4", features = ["derive"] }
+eff_data = { path = "../eff_data", features = ["serde"] }
+serde_json = "1.0"

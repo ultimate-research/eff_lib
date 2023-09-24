@@ -1,0 +1,3 @@
+[workspace]
+members = ["eff_data", "eff_data_json", "eff_lib", "eff_lib_json"]
+resolver = "2"

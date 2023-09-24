@@ -1,0 +1,17 @@
+[package]
+name = "eff_data"
+version = "0.1.0"
+authors = ["ThatNintendoNerd"]
+edition = "2021"
+description = "High-level reading and writing of EFF files"
+documentation = "https://docs.rs/eff_data"
+repository = "https://github.com/ultimate-research/eff_data"
+license = "MIT"
+
+[dependencies]
+binrw = "0.12.0"
+eff_lib = { path = "../eff_lib", default_features = false }
+serde = { version = "1.0", features = ["derive"], optional = true }
+
+[features]
+serde = ["dep:serde", "eff_lib/serde"]
